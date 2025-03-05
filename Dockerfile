@@ -8,8 +8,6 @@ COPY . .
 
 COPY cargo.toml cargo.lock ./
 
-COPY templates ./templates
-
 RUN cargo build --release
 
 RUN cargo install --target x86_64-unknown-linux-musl --path .
