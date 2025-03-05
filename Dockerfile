@@ -6,7 +6,7 @@ RUN rustup target add x86_64-unknown-linux-musl
 
 COPY . .
 
-COPY cargo.toml cargo.lock ./
+COPY Cargo.toml Cargo.lock ./
 
 RUN cargo build --release
 
@@ -14,9 +14,9 @@ RUN cargo install --target x86_64-unknown-linux-musl --path .
 
 FROM scratch
 
-COPY --from=builder /app/target/release/some_static_site /usr/share/nginx/html
+COPY --from=builder /app/target/release/axum-server /usr/share/nginx/html
 
 EXPOSE 8080
 
-CMD ["./target/release/some_static_site"]
+CMD ["./target/release/axum-server"]
 
