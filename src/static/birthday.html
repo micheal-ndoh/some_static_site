@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'float': 'float 2s ease-in-out infinite',
+                        'bounce-slow': 'bounce 2s ease-in-out infinite',
+                        'spin-slow': 'spin 6s linear infinite',
+                        'ping-slow': 'ping 2s cubic-bezier(0, 0, 0.2, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-purple-500 via-pink-400 to-blue-500 flex items-center justify-center p-4 overflow-hidden">
+    <!-- Background decorations -->
+    <div class="fixed inset-0 pointer-events-none">
+        <div class="absolute -top-10 -left-10 w-40 h-40 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-bounce-slow"></div>
+        <div class="absolute top-20 -right-10 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"></div>
+        <div class="absolute -bottom-10 left-1/2 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-ping-slow"></div>
+    </div>
+
+    <div class="relative max-w-4xl w-full backdrop-blur-lg bg-white/30 p-8 rounded-2xl shadow-2xl">
+        <!-- Birthday Image Container -->
+        <div class="relative w-full h-96 mb-8 overflow-hidden rounded-lg">
+            <img 
+                src="https://images.unsplash.com/photo-1558636508-e0db3814bd1d?auto=format&fit=crop&w=800&q=80" 
+                alt="Birthday Celebration" 
+                class="w-full h-full object-cover"
+                id="celebrationImage"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        </div>
+
+        <!-- Greeting Text -->
+        <div class="text-center relative z-10">
+            <h1 class="text-4xl font-bold text-white mb-4 animate-float" id="greetingText">
+                Happy Birthday! 🎉
+            </h1>
+            <p class="text-xl text-white/90 mb-8" id="personalizedMessage">
+                Loading your special message...
+            </p>
+        </div>
+
+        <!-- Decorative elements -->
+        <div class="absolute top-4 left-4 animate-spin-slow">
+            <svg class="w-8 h-8 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+            </svg>
+        </div>
+        <div class="absolute bottom-4 right-4 animate-bounce">
+            <svg class="w-8 h-8 text-pink-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"></path>
+                <path d="M4 21h16"></path>
+                <path d="M2 21h20"></path>
+                <path d="M12 8v5"></path>
+                <path d="M12 3v3"></path>
+                <path d="M12 3c.5-1.5 3-1.5 3 0"></path>
+                <path d="M12 3c-.5-1.5-3-1.5-3 0"></path>
+            </svg>
+        </div>
+
+        <!-- Back button -->
+        <a href="index.html" class="absolute top-4 right-4 bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full transition-all duration-300 backdrop-blur-sm">
+            ← Back
+        </a>
+    </div>
+
+    <script>
+        // Get the name from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+
+        // Update the greeting text
+        if (name) {
+            document.getElementById('greetingText').textContent = `Happy Birthday, ${name}! 🎉`;
+            document.getElementById('personalizedMessage').textContent = 
+                `May your day be filled with joy, laughter, and unforgettable moments! 🎈✨`;
+        }
+
+        // List of celebration images (you can change these URLs later)
+        const celebrationImages = [
+            "https://images.unsplash.com/photo-1558636508-e0db3814bd1d?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=800&q=80"
+        ];
+
+        // Change image periodically
+        let currentImageIndex = 0;
+        setInterval(() => {
+            currentImageIndex = (currentImageIndex + 1) % celebrationImages.length;
+            const img = document.getElementById('celebrationImage');
+            img.style.opacity = '0';
+            setTimeout(() => {
+                img.src = celebrationImages[currentImageIndex];
+                img.style.opacity = '1';
+            }, 300);
+        }, 3000);
+    </script>
+
+    <style>
+        #celebrationImage {
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</body>
+</html>
