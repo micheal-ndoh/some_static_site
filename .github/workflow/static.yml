@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - nkwenti-build
 
 jobs:
   build:
