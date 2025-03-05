@@ -1,4 +1,4 @@
-name: fibonacci package push
+name: build and deploy to ghcr
 
 on:
   push:
