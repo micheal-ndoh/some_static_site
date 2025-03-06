@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main 
-      - developer2
+  
 
 jobs:
   build:
@@ -43,10 +43,10 @@ jobs:
         env:
          DSLIM_HTTP_PROBE: "false"  # Disables HTTP probing during slimming
         with:
-         target: ghcr.io/${{ vars.REPOSITORY }}/static-web-image:latest  # Target image to slim
+         target: ghcr.io/${{ vars.REPOSITORY }}/some_static_site:latest  # Target image to slim
          tag: latest  # Suffix for the slimmed image tag
 
     # Step 5: Push the slimmed image to GitHub Container Registry.
       - name: Push slimmed Docker image
         run: |
-         docker push ghcr.io/${{ vars.REPOSITORY }}/static-web-image:latest  
+         docker push ghcr.io/${{ vars.REPOSITORY }}/some_static_site:latest  
