@@ -3,7 +3,8 @@ name: build and deploy to ghcr
 on:
   push:
     branches:
-      - main
+      - main 
+      - developer2
 
 jobs:
   build:
