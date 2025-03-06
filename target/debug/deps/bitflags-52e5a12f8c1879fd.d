@@ -1,0 +1,11 @@
+/home/kunga-derick/projects/rust_programming/some_static_site/target/debug/deps/libbitflags-52e5a12f8c1879fd.rmeta: /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/lib.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/iter.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/parser.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/traits.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/public.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/internal.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/external.rs
+
+/home/kunga-derick/projects/rust_programming/some_static_site/target/debug/deps/bitflags-52e5a12f8c1879fd.d: /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/lib.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/iter.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/parser.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/traits.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/public.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/internal.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/external.rs
+
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/lib.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/iter.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/parser.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/traits.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/public.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/internal.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.9.0/src/external.rs:

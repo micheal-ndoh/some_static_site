@@ -1,0 +1,9 @@
+/home/kunga-derick/projects/rust_programming/some_static_site/target/debug/deps/libserde_path_to_error-618f51809dd3464b.rmeta: /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_path_to_error-0.1.17/src/lib.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_path_to_error-0.1.17/src/de.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_path_to_error-0.1.17/src/path.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_path_to_error-0.1.17/src/ser.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_path_to_error-0.1.17/src/wrap.rs
+
+/home/kunga-derick/projects/rust_programming/some_static_site/target/debug/deps/serde_path_to_error-618f51809dd3464b.d: /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_path_to_error-0.1.17/src/lib.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_path_to_error-0.1.17/src/de.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_path_to_error-0.1.17/src/path.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_path_to_error-0.1.17/src/ser.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_path_to_error-0.1.17/src/wrap.rs
+
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_path_to_error-0.1.17/src/lib.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_path_to_error-0.1.17/src/de.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_path_to_error-0.1.17/src/path.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_path_to_error-0.1.17/src/ser.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde_path_to_error-0.1.17/src/wrap.rs:

@@ -1,0 +1,10 @@
+/home/kunga-derick/projects/rust_programming/some_static_site/target/debug/deps/libmatchit-2934e641d966d913.rmeta: /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/lib.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/error.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/escape.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/params.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/router.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/tree.rs
+
+/home/kunga-derick/projects/rust_programming/some_static_site/target/debug/deps/matchit-2934e641d966d913.d: /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/lib.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/error.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/escape.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/params.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/router.rs /home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/tree.rs
+
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/lib.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/error.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/escape.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/params.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/router.rs:
+/home/kunga-derick/.cargo/registry/src/index.crates.io-6f17d22bba15001f/matchit-0.8.4/src/tree.rs:
