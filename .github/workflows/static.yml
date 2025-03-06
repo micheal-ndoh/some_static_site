@@ -35,7 +35,7 @@ jobs:
          # Step : Build the Docker image
       - name: Build Docker image
         run: |
-         docker build -t ghcr.io/${{ vars.REPOSITORY }}/some_static_site:latest .
+         docker build -t ghcr.io/${{ vars.REPOSITORY }}/some_static_site .
    
          # Step 4: Slim the Docker image using Kitabisa Action
       - name: Slim Docker image
@@ -43,10 +43,10 @@ jobs:
         env:
          DSLIM_HTTP_PROBE: "false"  # Disables HTTP probing during slimming
         with:
-         target: ghcr.io/${{ vars.REPOSITORY }}/some_static_site:latest  # Target image to slim
-         tag: latest  # Suffix for the slimmed image tag
+         target: ghcr.io/${{ vars.REPOSITORY }}/some_static_site  # Target image to slim
+           # Suffix for the slimmed image tag
 
     # Step 5: Push the slimmed image to GitHub Container Registry.
       - name: Push slimmed Docker image
         run: |
-         docker push ghcr.io/${{ vars.REPOSITORY }}/some_static_site:latest  
+         docker push ghcr.io/${{ vars.REPOSITORY }}/some_static_site  
