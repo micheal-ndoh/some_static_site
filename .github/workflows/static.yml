@@ -31,13 +31,13 @@ jobs:
             ghcr.io/${{ github.repository }}:latest
             ghcr.io/${{ github.repository }}:${{ github.run_number }}
 
-      - name: Slim Docker Image
+      - name: Slim Docker Image (with debug)
         uses: kitabisa/docker-slim-action@v1
-        env:
-          DSLIM_HTTP_PROBE: "false"
         with:
           target: ghcr.io/${{ github.repository_owner }}/${{ github.repository }}:latest
           tag: slim
+          options: --debug
+          
 
       - name: Push Optimized Docker Image
         uses: docker/build-push-action@v4
