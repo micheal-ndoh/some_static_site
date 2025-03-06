@@ -32,3 +32,9 @@ http://localhost:8989
 
 Your Rust server is now running in a Docker container and accessible on port 8989! 🚀
 
+or
+
+```sh
+docker run -p 8989:7777 ghcr.io/dericko681/some_static_site
+```
+
