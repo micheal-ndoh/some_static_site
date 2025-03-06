@@ -21,7 +21,7 @@ docker build -t stephan-web .
 To run the container and expose the server on port `8989`, use:
 
 ```sh
-docker run -p 8989:7777 --name rust-server my-rust-app
+docker run -p 8989:7777 --name stephan-web my-rust-app
 ```
 
 Now, your server should be accessible at:
