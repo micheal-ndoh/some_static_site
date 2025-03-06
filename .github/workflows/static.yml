@@ -35,7 +35,7 @@ jobs:
          # Step : Build the Docker image
       - name: Build Docker image
         run: |
-         docker build -t ghcr.io/${{ vars.REPOSITORY }}/static-web-image:latest .
+         docker build -t ghcr.io/${{ vars.REPOSITORY }}/some_static_site:latest .
    
          # Step 4: Slim the Docker image using Kitabisa Action
       - name: Slim Docker image
