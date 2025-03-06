@@ -1,22 +1,30 @@
+# stage 1
 FROM rust:latest as builder
 
+# working directory
 WORKDIR /app
 
-RUN rustup target add x86_64-unknown-linux-musl
-
+# Copy the source code
 COPY . .
 
-COPY Cargo.toml Cargo.lock ./
-
+# Building the application
 RUN cargo build --release
 
-RUN cargo install --target x86_64-unknown-linux-musl --path .
+# stage 2
+FROM ubuntu:22.04
 
-FROM scratch
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    libssl-dev \
+    && rm -rf /var/lib/apt/lists/*
 
-COPY --from=builder /app/target/release/axum-server /usr/share/nginx/html
+# working directory
+WORKDIR /app
 
-EXPOSE 8080
+COPY --from=builder /app/target/release/axum-server /usr/local/bin/axum-server
 
-CMD ["./target/release/axum-server"]
+RUN chmod +x /usr/local/bin/axum-server
 
+EXPOSE 7777
+
+ENTRYPOINT ["axum-server"]

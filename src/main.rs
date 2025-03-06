@@ -4,7 +4,7 @@ use std::{fs,
 };
 
 fn main() {
-    let listener = TcpListener::bind("127.0.0.1:7777").unwrap();
+    let listener = TcpListener::bind("0.0.0.0:7777").unwrap();
 
     for stream in listener.incoming() {
         let stream = stream.unwrap();
