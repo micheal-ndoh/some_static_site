@@ -18,7 +18,7 @@ fn handle_connection(mut stream: TcpStream) {
 
     if request_line == "GET / HTTP/1.1" {
         let status_line = "HTTP/1.1 200 OK";
-        let contents = fs::read_to_string("src/static/index.html").unwrap();
+        let contents = fs::read_to_string("/app/static/index.html").unwrap();
         let length = contents.len();
 
         let response = format!(
